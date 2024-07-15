@@ -9,8 +9,8 @@ dotenv.config();
 const app = express();
 
 app.use(cors({
-  credentials: true,
-  origin: process.env.ORIGIN_URL
+  origin: ['https://ac.apnaconnection.com', 'http://localhost:5173'],
+  optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
 }));
 
 app.use(express.json());
