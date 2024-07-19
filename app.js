@@ -9,7 +9,7 @@ dotenv.config();
 const app = express();
 
 app.use(cors({
-  origin: ['https://ac.apnaconnection.com', 'http://localhost:5173'],
+  origin: 'https://ac-apnaconnection.netlify.app',
   optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
 }));
 
