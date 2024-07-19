@@ -10,7 +10,8 @@ const app = express();
 
 app.use(cors({
   origin: 'https://ac-apnaconnection.netlify.app',
-  optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
+  optionsSuccessStatus: 200, // some legacy browsers (IE11, various SmartTVs) choke on 204
+  credentials: true
 }));
 
 app.use(express.json());
